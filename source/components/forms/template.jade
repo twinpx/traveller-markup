@@ -1,0 +1,40 @@
+﻿// start /components/forms/
+
+link( rel="stylesheet", href="/components/forms/style.css" )
+script( src="/components/forms/script.js" )
+
+.b-forms
+  .row
+    .col-sm-12
+      nav
+        ul.tabs
+        
+          li.tab.col-sm-3
+            a( href="#form1" ).valign-wrapper
+              span.valign.center Поиск туров
+              
+          li.tab.col-sm-3
+            a( href="#form2" ).valign-wrapper
+              span.valign.center Поиск авиабилетов
+              
+          li.tab.col-sm-3.disabled
+            a( href="#form3" ).valign-wrapper
+              span.valign.center Поиск отелей
+              
+          li.tab.col-sm-3
+            a( href="#form4" ).valign-wrapper
+              span.valign.center Бронирование автомобилей
+          
+    #form1.col-sm-12.b-forms__tab
+      div( style="width: 300px; background-color: pink;" ) form1
+    
+    #form2.col-sm-12.b-forms__tab
+      div( style="width: 100px; background-color: lightgreen;" ) form2
+      
+    #form3.col-sm-12.b-forms__tab
+      div( style="width: 500px; background-color: violet;" ) form3
+      
+    #form4.col-sm-12.b-forms__tab
+      div( style="width: 600px; background-color: lightblue;" ) form4
+
+// end /components/forms/
