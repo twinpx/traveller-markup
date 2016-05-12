@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Forms | travellers</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/template/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/template/template_styles.css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+    <script src="/template/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+    <script src="/template/jscript.js"></script>
+  </head>
+  <body>
+    <header class="b-header">
+      <nav>
+        <div class="container">
+          <div class="nav-wrapper"><a href="#" class="brand-logo left"><img src="/upload/travellers-logo.png" alt="Travellers"></a>
+            <ul class="unstyled b-header-top-menu center hide-on-med-and-down">
+              <li><span href="" class="i-disabled">Туры</span></li>
+              <li><a href="">Авиабилеты</a></li>
+              <li><a href="">Отели</a></li>
+              <li><a href="">О нас</a></li>
+            </ul>
+            <ul class="unstyled b-header-icons right">
+              <li><a href=""><i class="material-icons">phone</i></a></li>
+              <li><a href="" data-activates="slide-out" class="b-header-nav"><i class="material-icons">view_headline</i></a></li>
+            </ul>
+            <ul id="slide-out" class="side-nav unstyled">
+              <li data-activates="slide-out" class="side-nav-back"></li>
+              <li class="side-nav-logo"><a href=""><img src="/upload/travellers-logo.png" alt="Travellers"></a></li>
+              <li><a href="">Туры</a></li>
+              <li><a href="">Авиабилеты</a></li>
+              <li><a href="">Отели</a></li>
+              <li><a href="">О нас</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="container">
+      <hr class="i-unstyled">
+      <!-- start /components/forms/-->
+      <link rel="stylesheet" href="/components/forms/style.css">
+      <script src="/components/forms/script.js"></script>
+      <div class="b-forms">
+        <div class="row">
+          <div class="col-sm-12">
+            <nav>
+              <ul class="tabs">
+                <li class="tab col-sm-3"><a href="#form1" class="valign-wrapper"><span class="valign center">Поиск туров</span></a></li>
+                <li class="tab col-sm-3"><a href="#form2" class="valign-wrapper"><span class="valign center">Поиск авиабилетов</span></a></li>
+                <li class="tab col-sm-3 disabled"><a href="#form3" class="valign-wrapper"><span class="valign center">Поиск отелей</span></a></li>
+                <li class="tab col-sm-3"><a href="#form4" class="valign-wrapper"><span class="valign center">Бронирование автомобилей</span></a></li>
+              </ul>
+            </nav>
+          </div>
+          <div id="form1" class="col-sm-12 b-forms__tab">
+            <div style="width: 300px; background-color: pink;">form1</div>
+          </div>
+          <div id="form2" class="col-sm-12 b-forms__tab">
+            <div style="width: 100px; background-color: lightgreen;">form2</div>
+          </div>
+          <div id="form3" class="col-sm-12 b-forms__tab">
+            <div style="width: 500px; background-color: violet;">form3</div>
+          </div>
+          <div id="form4" class="col-sm-12 b-forms__tab">
+            <div style="width: 600px; background-color: lightblue;">form4</div>
+          </div>
+        </div>
+      </div>
+      <!-- end /components/forms/-->
+    </section>
+    <footer class="b-footer">
+      <section class="container">
+        <div class="b-row">
+          <div class="b-col-sm-4"></div>
+          <div class="b-col-sm-4"></div>
+          <div class="b-col-sm-4"></div>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>

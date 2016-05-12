@@ -1,4 +1,4 @@
-!function(a){"use strict";a(function(){a(".b-header-nav").sideNav({menuWidth:390}),a(".side-nav-back").click(function(){a("#slide-out").sideNav("hide")})})}(jQuery);
+!function(a){"use strict";a(function(){a(".b-header-nav").sideNav({menuWidth:390}),a(".side-nav-back").click(function(){a("#slide-out").sideNav("hide")}),a("ul.tabs").tabs()})}(jQuery);
 /*! Copyright (c) 2007-2014 Ariel Flesler - aflesler<a>gmail<d>com | http://flesler.blogspot.com
  * Licensed under MIT
  * @author Ariel Flesler
