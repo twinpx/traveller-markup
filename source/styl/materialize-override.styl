@@ -32,8 +32,19 @@ nav ul span
   color #fff
   display inline-block
   
+nav ul a.active span
+  color #000
+  
+nav ul .disabled a
+  &:hover,
+  &:focus
+    background transparent
+  
 .tabs
   background-color transparent
+  
+  .indicator
+    display none
   
   nav &
     height 100px
@@ -61,6 +72,22 @@ nav ul span
       &:focus
         color #fff
         opacity( 0.6 )
+      
+      &.active
+        background-color #fff
+        color #000
+        
+        &:hover,
+        &:focus
+          color #000
+          opacity( 1 )
+          cursor default
+      
+    &.disabled
+      a
+        &:hover,
+        &:focus
+          opacity( 1 )
         
 .center
   text-align center
