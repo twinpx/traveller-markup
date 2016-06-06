@@ -19,10 +19,16 @@ h2
   font-weight bold
   margin 1.5rem 0 1.4rem 0
   
+  @media (max-width: 768px)
+    font-size 16pt
+  
 h3
   font-size 13.5pt
   line-height 1.4
   font-weight bold
+  
+  @media (max-width: 768px)
+    margin-bottom 0.5 rem
   
 h1, h2, h3, h4, h5, h6
   &:first-child
@@ -30,6 +36,9 @@ h1, h2, h3, h4, h5, h6
   
 p
   margin 0 0 15pt
+  
+  &:last-child
+    margin-bottom 0
   
 ul,
 ol
@@ -62,11 +71,15 @@ ul
     list-style-type disc
     
 hr
+  border-top-color #e0e0e0
   &.i-size-XS
     margin 2px 0
     
   &.i-size-S
     margin 5px 0
+    
+  &.i-size-M
+    margin 10pt 0
     
   &.i-size-L
     margin 40px 0
@@ -91,3 +104,6 @@ a:focus
 .center .img-responsive
   margin-left auto
   margin-right auto
+  
+.btn-wide
+  width 100%
