@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Request | travellers</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/template/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/template/template_styles.css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+    <script src="/template/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+    <script src="/template/jscript.js"></script>
+  </head>
+  <body>
+    <header class="b-header">
+      <nav>
+        <div class="container">
+          <div class="nav-wrapper"><a href="#" class="brand-logo left"><img src="/upload/travellers-logo.png" alt="Travellers"></a>
+            <ul class="unstyled b-header-top-menu center hide-on-med-and-down">
+              <li><span href="/tours/" class="i-disabled">Туры</span></li>
+              <li><a href="/aviatickets/">Авиабилеты</a></li>
+              <li><a href="/hotels/">Отели</a></li>
+              <li><a href="/about/">О нас</a></li>
+            </ul>
+            <ul class="unstyled b-header-icons right">
+              <li><a href="" class="b-phone-icon"><i></i></a></li>
+              <li><a href="" data-activates="slide-out" class="b-header-nav b-menu-icon"><i></i></a></li>
+            </ul>
+            <ul id="slide-out" class="side-nav unstyled">
+              <li data-activates="slide-out" class="side-nav-back"></li>
+              <li class="side-nav-logo"><a href=""><img src="/upload/travellers-logo.png" alt="Travellers"></a></li>
+              <li><a href="/tours/">Туры</a></li>
+              <li><a href="/aviatickets/">Авиабилеты</a></li>
+              <li><a href="/hotels/">Отели</a></li>
+              <li><a href="/about/">О нас</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="container">
+      <hr class="i-unstyled">
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+          <h1>Отправить запрос</h1>
+          <p>Отправьте запрос на интересующий вас тур и мы предложим вам оптимальный вариант путешествия.</p>
+        </div>
+      </div>
+      <hr class="i-unstyled">
+      <!-- start /components/forms.request/-->
+      <link rel="stylesheet" href="/components/forms.request/style.css">
+      <script src="/components/forms.request/script.js"></script>
+      <div class="b-forms">
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+            <hr class="i-unstyled">
+            <form action="" method="get">
+              <div class="input-field">
+                <input id="first_name" type="text" required class="validate">
+                <label for="first_name">Как Вас зовут </label>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="input-field">
+                    <input id="phone" type="tel" required class="validate">
+                    <label for="phone">Контактный телефон</label>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="input-field">
+                    <input id="email" type="email" required class="validate">
+                    <label for="email">Ваш email</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="input-field">
+                    <input id="country" type="text" required class="validate">
+                    <label for="country">Куда хотите поехать?</label>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="input-field">
+                    <input id="period" type="text" required class="validate">
+                    <label for="period">Даты путешествия</label>
+                  </div>
+                </div>
+              </div>
+              <div class="input-field">
+                <textarea id="message" class="materialize-textarea validate"></textarea>
+                <label for="message">Дополнительные заметки (необязательно)</label>
+              </div>
+              <hr class="i-unstyled">
+              <div class="center">
+                <button type="submit" class="btn-large">Отправить заявку</button>
+              </div>
+            </form>
+            <hr class="i-unstyled">
+          </div>
+        </div>
+      </div>
+      <!-- end /components/forms.request/-->
+      <hr class="i-unstyled">
+    </section>
+    <footer class="b-footer">
+      <section class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <h3>О компании</h3>
+            <pS7>Airlines (бренд авиакомпании «Сибирь») обладает широкой сетью внутренних маршрутов, выстроенной на базе авиатранспортных узлов в Москве (Домодедово) и Новосибирске (Толмачёво). S7 Airlines также выполняет <a href="">регулярные</a> полеты в страны СНГ, Европу, Ближний Восток, Юго-Восточную Азию и страны Азиатско-Тихоокеанского региона.</pS7>
+          </div>
+          <div class="col-sm-4">
+            <h3>Офис</h3>
+            <p>Мневники, дом 3, строение 1, офис 224.<br><a href="">На карте (Схема проезда)</a></p>
+            <h3>Телефоны</h3>
+            <p>+ 8 888 88 88 (для Москвичей)<br>+ 7 777 77 77 (для всей России)</p>
+            <hr class="unstyled">
+            <ul class="unstyled b-footer-social">
+              <li><a href="" class="i-vk"></a></li>
+              <li><a href="" class="i-ok"></a></li>
+              <li><a href="" class="i-fb"></a></li>
+              <li><a href="" class="i-tw"></a></li>
+              <li><a href="" class="i-gp"></a></li>
+            </ul>
+          </div>
+          <hr class="unstyled visible-xs-block">
+          <div class="col-sm-4">
+            <h3>Полезная информация</h3>
+            <ul class="unstyled">
+              <li><a href="">Туры</a></li>
+              <li><a href="">Авиабилеты</a></li>
+              <li><a href="">Отели</a></li>
+              <li><a href="">Аренда автомобилей</a></li>
+              <li><a href="">О компании</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr class="i-size-L">
+        <div class="xsmall">
+          <p>Все приведенные на настоящем сайте стоимостные показатели туристских услуг являются частью оферты, предназначенной для юридических лиц (туристских агентств) заключивших договоры с ООО "Джет Тревел" и занесенных в реестр агентств ООО "Джет Тревел".</p>
+          <p>ООО "Джет Тревел" намерено в соответствии со ст. 435 ГК РФ реализовать туристский продукт тем агентствам из реестра агентств ООО "Джет Тревел", которыми будет принято предложение. Оферта действует на день предложения.</p>
+          <p>Информация (в том числе, о стоимости турпродукта), содержащаяся на интернет-сайте www.jettravel.ru предназначена для определенного ограниченного круга юридических лиц: исключительно для туристских агентств, заключивших агентские договоры с OOО "Джет Тревел" и содержащихся в базе данных агентств ООО "Джет Тревел"; вся информация (в том числе, о стоимости турпродукта) для любых иных юридических и физических лиц может быть получена при личном обращении в компанию по телефонам и адресам электронной почты, приведенным на сайте.</p>
+        </div>
+        <hr class="unstyled i-size-S">
+        <div class="row xsmall">
+          <div class="col-xs-6">© Сopyright. Traveller 2016</div>
+          <div class="col-xs-6 text-right"><a href="http://bejet.ru" target="_blank">Решение создано в Bejet.</a></div>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+
+<!-- start /components/forms.request/-->
+<link rel="stylesheet" href="/components/forms.request/style.css"/>
+<script src="/components/forms.request/script.js"></script>
+<div class="b-forms">
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+      <hr class="i-unstyled"/>
+      <form action="" method="get">
+        <div class="input-field">
+          <input id="first_name" type="text" required="required" class="validate"/>
+          <label for="first_name">Как Вас зовут </label>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="input-field">
+              <input id="phone" type="tel" required="required" class="validate"/>
+              <label for="phone">Контактный телефон</label>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="input-field">
+              <input id="email" type="email" required="required" class="validate"/>
+              <label for="email">Ваш email</label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="input-field">
+              <input id="country" type="text" required="required" class="validate"/>
+              <label for="country">Куда хотите поехать?</label>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="input-field">
+              <input id="period" type="text" required="required" class="validate"/>
+              <label for="period">Даты путешествия</label>
+            </div>
+          </div>
+        </div>
+        <div class="input-field">
+          <textarea id="message" class="materialize-textarea validate"></textarea>
+          <label for="message">Дополнительные заметки (необязательно)</label>
+        </div>
+        <hr class="i-unstyled"/>
+        <div class="center">
+          <button type="submit" class="btn-large">Отправить заявку</button>
+        </div>
+      </form>
+      <hr class="i-unstyled"/>
+    </div>
+  </div>
+</div>
+<!-- end /components/forms.request/-->
