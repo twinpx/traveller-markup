@@ -1,0 +1,49 @@
+﻿// start /components/forms.request/
+
+link( rel="stylesheet", href="/components/forms.request/style.css" )
+script( src="/components/forms.request/script.js" )
+
+.b-forms
+  .row
+    .col-sm-8.col-sm-offset-2
+      
+      hr.i-unstyled
+      
+      form( action="" method="get" )
+        
+        .input-field
+          input#first_name.validate( type="text" required )
+          label( for="first_name" ) Как Вас зовут 
+          
+        .row
+          .col-sm-6
+            .input-field
+              input#phone.validate( type="tel" required )
+              label( for="phone" ) Контактный телефон
+          .col-sm-6
+            .input-field
+              input#email.validate( type="email" required )
+              label( for="email" ) Ваш email
+          
+        .row
+          .col-sm-6
+            .input-field
+              input#country.validate( type="text" required )
+              label( for="country" ) Куда хотите поехать?
+          .col-sm-6
+            .input-field
+              input#period.validate( type="text" required )
+              label( for="period" ) Даты путешествия
+              
+        .input-field
+          textarea#message.materialize-textarea.validate
+          label( for="message" ) Дополнительные заметки (необязательно)
+          
+        hr.i-unstyled
+          
+        .center
+          button.btn-large( type="submit" ) Отправить заявку
+        
+      hr.i-unstyled
+
+// end /components/forms.request/
