@@ -104,3 +104,30 @@ nav ul .disabled a
   border-radius( 5px )
   text-transform none
   font-weight bold
+  
+input:not([type]),
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=url],
+input[type=time],
+input[type=date],
+input[type=datetime],
+input[type=datetime-local],
+input[type=tel],
+input[type=number],
+input[type=search],
+textarea.materialize-textarea
+
+  &:focus:not([readonly])
+    border-bottom-color #cc0033
+    box-shadow 0 1px 0 0 #cc0033
+    
+    &+label
+      color #cc0033
+      
+.z-depth-1-half,
+.btn:hover,
+.btn-large:hover,
+.btn-floating:hover
+  box-shadow none
