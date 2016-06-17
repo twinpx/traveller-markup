@@ -19,9 +19,14 @@
   ul&-top-menu
     margin-left 31%
     
-  &-icons
+  ul&-icons
+    margin-right -10px
+    
     a
       padding 0 20px
+      
+      @media ( max-width: 600px )
+        padding 0 10px
   
   a,
   a:hover,
@@ -34,13 +39,19 @@
     color #fff
     
   &-back
-    width 50px
-    height 50px
+    width 69px
+    height 100px
     background embedurl( 'img/slide-back.png' ) no-repeat center center
     position absolute
-    top 24px
-    right 10px
+    top 0
+    right 0
     z-index 10
+    
+    @media ( min-width: 767px )
+      display none
+      
+    &:active
+      background-color rgba(0,0,0,0.05)
     
   &-logo
     height 100px
@@ -52,7 +63,7 @@
 .b-phone-icon
   i
     display inline-block
-    vertical-align middle
+    vertical-align top
     width 30px
     height 30px
     background embedurl( 'img/phone-icon.png' ) no-repeat center center
@@ -60,7 +71,7 @@
 .b-menu-icon
   i
     display inline-block
-    vertical-align middle
+    vertical-align top
     width 30px
     height 30px
     background embedurl( 'img/menu-icon.png' ) no-repeat center center
