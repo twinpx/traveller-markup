@@ -1,0 +1,81 @@
+﻿extends ../layouts/main.jade
+
+block title
+  title About | travellers
+
+block content
+
+  hr.i-unstyled
+
+  .row
+    .col-sm-8.col-sm-offset-2
+    
+      h1 О компании  
+      p Мы рады приветствовать вас на сайте туристической компании Travellers, мы бережно относимся к вашему времени и комфорту, поэтому наш сайт максимально прост и удобен в использование. 
+      p Вы готовы выбрать собственный отдых, тогда обратите внимание на преимущества,к оторыми вы сможете воспользваться, обратившись к нам.
+
+  hr.i-size-L
+  
+  .row
+    .col-sm-8.col-sm-offset-2
+    
+      .row
+        .col-sm-6.center
+          img.img-responsive( src="/upload/about1.png" alt="" )
+        .col-sm-6
+          h2 Широчайший выбор стран
+          p Пляжный отдых, экскурсионные программы, круизы, горные лыжи, авиабилеты и отели, посещение мероприятий, на нашем сайте вы сможете найти предложение более, чем по 30 странам мира.
+      
+      hr.i-unstyled
+      
+      .row
+        .col-sm-6.col-sm-push-6.center
+          img.img-responsive( src="/upload/about2.png" alt="" )
+        .col-sm-6.col-sm-pull-6
+          h2 Качественный сервис
+          p Наши сотрудники хорошо разбираются во всех направлениях предлагаемых нашим агентством помогают вам ответив на любой ваш вопрос в удобное для вас время.
+      
+      hr.i-unstyled
+      
+      .row
+        .col-sm-6.center
+          img.img-responsive( src="/upload/about3.png" alt="" )
+        .col-sm-6
+          h2 Надежный партнер
+          p Ответственность нашей компании застрахована в страховой компании «Страховка туристических компаний».
+          p Мы гарантирцем, что заказаные у нас услуги будут предоставлены своевременно и качественно.
+          
+  hr.i-size-L
+
+  .row
+    .col-sm-8.col-sm-offset-2
+      h2 Наши партнеры
+  
+  .row
+    - var i=0
+      while i<6
+        - i++
+        .col-sm-2.col-xs-6
+          a( href="" target="_blank" rel="nofollow" )
+            img( src="/upload/partners/#{i}.jpg" ).img-responsive
+          
+  hr.i-size-L
+  hr.i-unstyled
+
+  .row
+    .col-sm-8.col-sm-offset-2
+      h2 Документы
+      
+      ul
+        li
+          a( href="" target="_blank" rel="nofollow" ) Свидетельство о государственной регистрации
+        li
+          a( href="" target="_blank" rel="nofollow" ) Единый Федеральный Реестр Туроператоров
+        li
+          a( href="" target="_blank" rel="nofollow" ) Финансовые гарантии
+        li
+          a( href="" target="_blank" rel="nofollow" ) Страхование ответственности
+
+  hr.i-unstyled
+
+  
