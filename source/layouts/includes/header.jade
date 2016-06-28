@@ -3,7 +3,7 @@
     .container
       .nav-wrapper
       
-        a.brand-logo.left( href="#" )
+        a.brand-logo.left( href="/" )
           img( src="/upload/travellers-logo.png" alt="Travellers" )
           
         ul.unstyled.b-header-top-menu.center.hide-on-med-and-down
@@ -18,10 +18,10 @@
         
         ul.unstyled.b-header-icons.right
           li
-            a( href="#phoneModal" ).b-phone-icon.modal-trigger
+            a( href="#phoneModal" rel="nofollow" ).b-phone-icon.modal-trigger
               i
           li
-            a.b-header-nav.b-menu-icon( href="" data-activates="slide-out" )
+            a.b-header-nav.b-menu-icon( href="" data-activates="slide-out" rel="nofollow" )
               i
               
         include ../../modules/modal/include
