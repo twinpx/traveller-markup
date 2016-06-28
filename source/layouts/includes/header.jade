@@ -18,17 +18,13 @@
         
         ul.unstyled.b-header-icons.right
           li
-            a( href="#phone-modal" ).b-phone-icon.modal-trigger
+            a( href="#phoneModal" ).b-phone-icon.modal-trigger
               i
           li
             a.b-header-nav.b-menu-icon( href="" data-activates="slide-out" )
               i
-        #phone-modal.modal
-          .modal-content
-            h4 Modal Header
-            p A bunch of text
-          .modal-footer
-            a( href="#!" ).modal-action.modal-close.waves-effect.waves-green.btn-flat Agree
+              
+        include ../../modules/modal/include
               
         ul#slide-out.side-nav.unstyled
           li.side-nav-back(  data-activates="slide-out" )
@@ -43,4 +39,3 @@
             a( href="/hotels/" ) Отели
           li
             a( href="/about/" ) О нас
-            

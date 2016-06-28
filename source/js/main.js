@@ -7,3 +7,5 @@ $( '.side-nav-back' ).click( function() {
 });
 
 $( 'ul.tabs' ).tabs();
+
+$('.modal-trigger').leanModal();

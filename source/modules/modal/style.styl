@@ -1,0 +1,89 @@
+﻿@import '../../styl/component-include.styl'
+
+.modal
+  color #333
+  line-height 1.72857143
+  
+  a
+    color #c03
+    text-decoration underline
+    
+    &:hover,
+    &:focus
+      color #f36
+      
+  h2
+    font-size 32pt
+    margin 30px 0 65px
+    
+    @media( max-width 750px )
+      font-size 20pt
+      margin 20px 0 46px
+  
+  .b-phone-icon
+    display block
+    margin 0 auto 20px
+    width 32px
+    height 32px
+    background embedurl( 'img/phone-modal-icon.png' ) no-repeat 0 0
+    
+    @media( max-width 750px )
+      margin-bottom 24px
+  
+  .b-post-icon
+    display block
+    margin 0 auto 15px
+    width 32px
+    height 32px
+    background embedurl( 'img/post-icon.png' ) no-repeat 0 0
+  
+  .modal-close
+    display block
+    margin 0 auto
+    width 64px
+    height 64px
+    background embedurl( 'img/close-icon.png' ) no-repeat center center #efefef
+    border-radius 51%
+    position absolute
+    top 35px
+    right 35px
+    
+    &:hover
+      background embedurl( 'img/close-icon-hover.png' ) no-repeat center center #999
+      
+    @media( max-width 750px )
+      top auto
+      bottom 20px
+      left 50%
+      margin-left -32px
+      
+  &-phones
+    margin-bottom 70px
+      
+    @media( max-width 750px )
+      margin-bottom 46px
+  
+    div
+      font-size 13.5pt
+      margin-bottom 4px
+      line-height 1.1
+      
+      @media( max-width 750px )
+        font-size 17pt
+        line-height 1.4
+    
+      &:first-of-type
+        font-size 34pt
+        margin-bottom 21px
+        line-height normal
+      
+        @media( max-width 750px )
+          font-size 20pt
+          margin-bottom 19px
+        
+  &-post
+    font-size 20pt
+    margin-bottom 95px
+      
+    @media( max-width 750px )
+      margin-bottom 70px

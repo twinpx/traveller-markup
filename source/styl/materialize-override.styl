@@ -95,10 +95,12 @@ nav ul .disabled a
   
 .btn,
 .btn-large
+  background-color #cc0033
   
-  &,
-  &:hover
-    background-color #cc0033
+  &:hover,
+  &:focus,
+  &:active
+    background-color #c00030 //function less
     
 .btn, .btn-large, .btn-flat
   border-radius( 5px )
@@ -542,3 +544,6 @@ select
 .bxcompprop-content select~br,
 .bxcompprop-content select~input[type="text"]
   display none
+  
+.modal
+  max-height 80% !important
