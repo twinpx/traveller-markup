@@ -1,5 +1,5 @@
 $( ".b-header-nav" ).sideNav({
-  menuWidth: 390
+  menuWidth: 300
 });
 
 $( '.side-nav-back' ).click( function() {
