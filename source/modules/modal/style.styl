@@ -4,6 +4,9 @@
   color #333
   line-height 1.72857143
   
+  .modal-content
+    padding 24px 10px 10px
+  
   a
     color #c03
     text-decoration underline
@@ -17,8 +20,8 @@
     margin 30px 0 65px
     
     @media( max-width 750px )
-      font-size 20pt
-      margin 20px 0 46px
+      font-size 18pt
+      margin 0 0 26px
   
   .b-phone-icon
     display block
@@ -28,7 +31,7 @@
     background embedurl( 'img/phone-modal-icon.png' ) no-repeat 0 0
     
     @media( max-width 750px )
-      margin-bottom 24px
+      margin-bottom 14px
   
   .b-post-icon
     display block
@@ -36,6 +39,9 @@
     width 32px
     height 32px
     background embedurl( 'img/post-icon.png' ) no-repeat 0 0
+    
+    @media( max-width 750px )
+      margin-bottom 14px
   
   .modal-close
     display block
@@ -53,7 +59,7 @@
       
     @media( max-width 750px )
       top auto
-      bottom 20px
+      bottom 10px
       left 50%
       margin-left -32px
       
@@ -61,7 +67,7 @@
     margin-bottom 70px
       
     @media( max-width 750px )
-      margin-bottom 46px
+      margin-bottom 36px
   
     a
       color #333
@@ -78,7 +84,7 @@
       line-height 1.1
       
       @media( max-width 750px )
-        font-size 17pt
+        font-size 14pt
         line-height 1.4
     
       &:first-of-type
@@ -87,8 +93,9 @@
         line-height normal
       
         @media( max-width 750px )
-          font-size 20pt
-          margin-bottom 19px
+          font-size 16pt
+          margin-bottom 0
+          line-height 1.4
         
   &-post
     font-size 20pt
@@ -96,3 +103,4 @@
       
     @media( max-width 750px )
       margin-bottom 70px
+      font-size 16pt
