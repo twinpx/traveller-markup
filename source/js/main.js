@@ -7,5 +7,8 @@ $( '.side-nav-back' ).click( function() {
 });
 
 $( 'ul.tabs' ).tabs();
+$( '.b-forms .tab a' ).click( function() {
+  $( '.b-forms__tab' ).hide();
+});
 
 $('.modal-trigger').leanModal();

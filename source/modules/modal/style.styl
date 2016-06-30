@@ -6,6 +6,10 @@
   
   .modal-content
     padding 24px 10px 10px
+    
+  &.bottom-sheet
+    .modal-content
+      padding 24px 15px 15px
   
   a
     color #c03
@@ -43,7 +47,7 @@
     @media( max-width 750px )
       margin-bottom 14px
   
-  .modal-close
+  &:not(.bottom-sheet).modal-close
     display block
     margin 0 auto
     width 64px
