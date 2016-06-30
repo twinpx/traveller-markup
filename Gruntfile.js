@@ -57,6 +57,14 @@ module.exports = function( grunt ) {
           limit: 30000
         }
       },
+      colors: {
+        files: {
+          '<%= dest%>template/colors.css':
+            [
+              '<%= source%>styl/colors.styl'
+            ]
+        }
+      },
       template: {
         files: {
           '<%= dest%>template/template_styles.css':
@@ -96,6 +104,12 @@ module.exports = function( grunt ) {
               [
                 '<%= source%>styl/template_styles.styl',
                 '<%= source%>modules/**/*.styl'
+              ]
+          },
+          {
+            '<%= temp %>template/colors.css':
+              [
+                '<%= source%>styl/colors.styl'
               ]
           }
         ]
@@ -331,6 +345,16 @@ module.exports = function( grunt ) {
             dest: '<%= prod %>'
           }
         ]
+      },
+      colors: {
+        files: [
+          {
+            expand: true,
+            cwd: '<%= source %>styl/',
+            src: [ 'colors.styl' ],
+            dest: '<%= prod %>template/'
+          }
+        ]
       }
     },
     
@@ -389,7 +413,8 @@ module.exports = function( grunt ) {
   grunt.loadNpmTasks( 'grunt-contrib-clean' );
   grunt.loadNpmTasks( 'grunt-contrib-uglify' );
   
-  grunt.registerTask( 'css', [ 'stylus:template', 'stylus:components', 'concat:pluginsCSS' ] );
+  grunt.registerTask( 'scheme', [ 'stylus:colors' ] );
+  grunt.registerTask( 'css', [ 'stylus:template', 'stylus:components', 'concat:pluginsCSS', 'scheme' ] );
   grunt.registerTask( 'js', [ 'concat:js', 'jshint:dev', 'concat:pluginsJS', 'uglify:devTemplate', 'uglify:devComponents', 'clean:js' ] );
   grunt.registerTask( 'html', [ 'copy:images', 'jade:dev' ] );
   grunt.registerTask( 'default', [ 'connect', 'css', 'js', 'html', 'watch' ] );
@@ -411,6 +436,7 @@ module.exports = function( grunt ) {
     'copy:tempUpload',
     //copy
     'copy:prod',
+    'copy:colors',
     'clean:temp'
   ]);
   
