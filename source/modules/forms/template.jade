@@ -1,0 +1,137 @@
+﻿.b-forms
+  .hidden-xs
+    .row
+      .col-sm-12
+        nav
+          ul.unstyled.tabs
+          
+            li.tab.col-sm-3
+              a( href="#form1" ).valign-wrapper
+                span.valign.center Поиск туров
+                
+            li.tab.col-sm-3
+              a( href="#form2" ).valign-wrapper
+                span.valign.center Поиск авиабилетов
+                
+            li.tab.col-sm-3.disabled
+              a( href="#form3" ).valign-wrapper
+                span.valign.center Поиск отелей
+                
+            li.tab.col-sm-3
+              a( href="#form-menu" ).valign-wrapper.modal-trigger
+                span.valign.b-forms-menu
+            
+      #form1.col-sm-12.b-forms__tab
+        div( style="width: 700px; background-color: pink;" ) <script charset="utf-8" src="//www.travelpayouts.com/widgets/2e904aed9b11dc04a26ae5f66e4a9820.js?v=767" async></script>
+      
+      #form2.col-sm-12.b-forms__tab
+        div( style="width: 100px; background-color: lightgreen;" ) form2
+        
+      #form3.col-sm-12.b-forms__tab
+        div( style="width: 500px; background-color: violet;" ) form3
+        
+      #form4.col-sm-12.b-forms__tab
+        div( style="width: 300px; background-color: lightblue;" ) form4
+        
+      #form9.col-sm-12.b-forms__tab
+        div( style="width: 200px; background-color: pink;" ) form9
+        
+      #form10.col-sm-12.b-forms__tab
+        div( style="width: 600px; background-color: orange;" ) form10
+        
+  .visible-xs-block
+    .row
+      .col-sm-12
+        nav
+          ul.unstyled.tabs
+          
+            li.tab.col-sm-3
+              a( href="#form5" title="Поиск туров" ).i-tours
+                
+            li.tab.col-sm-3
+              a( href="#form6" title="Поиск авиабилетов" ).i-avia
+                
+            li.tab.col-sm-3.disabled
+              a( href="#form7" title="Поиск отелей" ).i-hotels
+                
+            li.tab.col-sm-3
+              a( href="#form-menu" ).valign-wrapper.modal-trigger
+                span.valign.b-forms-menu
+                
+            //li.tab.col-sm-3
+              a( href="#form8" titile="Бронирование автомобилей" ).i-cars
+            
+      #form5.col-sm-12.b-forms__tab
+        div( style="width: 300px; background-color: pink;" ) <script charset="utf-8" src="//www.travelpayouts.com/widgets/2e904aed9b11dc04a26ae5f66e4a9820.js?v=767" async></script>
+
+      
+      #form6.col-sm-12.b-forms__tab
+        div( style="width: 100px; background-color: lightgreen;" ) <script charset="utf-8" src="//www.travelpayouts.com/widgets/2e904aed9b11dc04a26ae5f66e4a9820.js?v=767" async></script>
+        
+      #form7.col-sm-12.b-forms__tab
+        div( style="width: 500px; background-color: violet;" ) <script charset="utf-8" src="//www.travelpayouts.com/widgets/2e904aed9b11dc04a26ae5f66e4a9820.js?v=767" async></script>
+        
+      #form8.col-sm-12.b-forms__tab
+        div( style="width: 200px; background-color: lightblue;" ) <script charset="utf-8" src="//www.travelpayouts.com/widgets/2e904aed9b11dc04a26ae5f66e4a9820.js?v=767" async></script>
+      
+      #form11.col-sm-12.b-forms__tab
+        div( style="width: 100px; background-color: lightgreen;" ) <script charset="utf-8" src="//www.travelpayouts.com/widgets/2e904aed9b11dc04a26ae5f66e4a9820.js?v=767" async></script>
+        
+      #form12.col-sm-12.b-forms__tab
+        div( style="width: 500px; background-color: violet;" ) <script charset="utf-8" src="//www.travelpayouts.com/widgets/2e904aed9b11dc04a26ae5f66e4a9820.js?v=767" async></script>
+        
+  #form-menu.modal.bottom-sheet
+    .modal-content   
+      nav
+        ul.tabs
+          .hidden-xs
+            li.tab
+              a.valign-wrapper.modal-action.modal-close( href="#form4" )
+                span.valign.center Бронирование автомобилей
+            li.tab
+              a.valign-wrapper.modal-action.modal-close( href="#form9" )
+                span.valign.center Поиск круизов
+            li.tab
+              a.valign-wrapper.modal-action.modal-close( href="#form10" )
+                span.valign.center Поиск горящих путевок
+            li.tab
+              a.valign-wrapper.modal-action.modal-close( href="#form4" )
+                span.valign.center Бронирование автомобилей
+            li.tab
+              a.valign-wrapper.modal-action.modal-close( href="#form9" )
+                span.valign.center Бронирование автомобилей
+            li.tab
+              a.valign-wrapper.modal-action.modal-close( href="#form10" )
+                span.valign.center Поиск круизов
+            li.tab
+              a.valign-wrapper.modal-action.modal-close( href="#form4" )
+                span.valign.center Поиск горящих путевок
+            li.tab
+              a.valign-wrapper.modal-action.modal-close( href="#form9" )
+                span.valign.center Бронирование автомобилей
+          
+          .visible-xs-block
+            li.tab
+              a.valign-wrapper.modal-action.modal-close( href="#form8" )
+                span.valign.center Бронирование автомобилей
+            li.tab
+              a.valign-wrapper.modal-action.modal-close( href="#form11" )
+                span.valign.center Поиск круизов
+            li.tab
+              a.valign-wrapper.modal-action.modal-close( href="#form12" )
+                span.valign.center Поиск горящих путевок
+            li.tab
+              a.valign-wrapper.modal-action.modal-close( href="#form8" )
+                span.valign.center Бронирование автомобилей
+            li.tab
+              a.valign-wrapper.modal-action.modal-close( href="#form11" )
+                span.valign.center Бронирование автомобилей
+            li.tab
+              a.valign-wrapper.modal-action.modal-close( href="#form12" )
+                span.valign.center Поиск круизов
+            li.tab
+              a.valign-wrapper.modal-action.modal-close( href="#form8" )
+                span.valign.center Поиск горящих путевок
+            li.tab
+              a.valign-wrapper.modal-action.modal-close( href="#form11" )
+                span.valign.center Бронирование автомобилей
