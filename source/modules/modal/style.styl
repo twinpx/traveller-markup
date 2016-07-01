@@ -35,7 +35,7 @@
     background embedurl( 'img/phone-modal-icon.png' ) no-repeat 0 0
     
     @media( max-width 750px )
-      margin-bottom 14px
+      display none
   
   .b-post-icon
     display block
@@ -45,9 +45,9 @@
     background embedurl( 'img/post-icon.png' ) no-repeat 0 0
     
     @media( max-width 750px )
-      margin-bottom 14px
+      display none
   
-  &:not(.bottom-sheet).modal-close
+  &:not(.bottom-sheet) .modal-close
     display block
     margin 0 auto
     width 64px
@@ -63,7 +63,7 @@
       
     @media( max-width 750px )
       top auto
-      bottom 10px
+      bottom 20px
       left 50%
       margin-left -32px
       
@@ -106,5 +106,5 @@
     margin-bottom 95px
       
     @media( max-width 750px )
-      margin-bottom 70px
+      margin-bottom 100px
       font-size 16pt
