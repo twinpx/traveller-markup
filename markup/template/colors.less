@@ -1,0 +1,76 @@
+﻿@primary-color: #e674e7;
+
+//bootstrap-override
+a {
+  color: @primary-color;
+
+  &:hover,
+  &:focus {
+    color: lighten( @primary-color, 20 );
+  }
+}
+    
+//materialize-override
+.btn,
+.btn-large {
+  background-color: @primary-color;
+  
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: darken( @primary-color, 3 );//#c00030
+  }
+}
+    
+input:not([type]),
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=url],
+input[type=time],
+input[type=date],
+input[type=datetime],
+input[type=datetime-local],
+input[type=tel],
+input[type=number],
+input[type=search],
+textarea.materialize-textarea {
+  
+  .container & {
+
+    &:focus:not([readonly]) {
+      border-bottom-color: @primary-color;
+      box-shadow: 0 1px 0 0 @primary-color;
+      
+      &+label {
+        color: @primary-color;
+      }
+    }
+  }
+}
+
+//scaffolding
+nav,
+.side-nav {
+  background-color: @primary-color;
+}
+
+//modules modal
+.modal a {
+  color: @primary-color;
+    
+  &:hover,
+  &:focus {
+    color: lighten( @primary-color, 20 );
+  }
+      
+  &-phones {
+  
+    a {
+      &:hover,
+      &:focus {
+        color: lighten( @primary-color, 20 );
+      }
+    }
+  }
+}

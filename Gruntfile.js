@@ -351,7 +351,7 @@ module.exports = function( grunt ) {
           {
             expand: true,
             cwd: '<%= source %>styl/',
-            src: [ 'colors.styl' ],
+            src: [ 'colors.*' ],
             dest: '<%= prod %>template/'
           }
         ]
