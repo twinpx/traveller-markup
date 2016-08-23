@@ -6,9 +6,8 @@ $( '.side-nav-back' ).click( function() {
   $( '#slide-out' ).sideNav( 'hide' );
 });
 
-$( 'ul.tabs' ).tabs();
-$( '.b-forms .tab a' ).click( function() {
-  $( '.b-forms__tab' ).hide();
-});
+if ( document.getElementById( 'bx-panel' )) {
+  $( '#slide-out' ).css({ top: $( '#bx-panel' ).height() + 'px' });
+}
 
 $('.modal-trigger').leanModal();

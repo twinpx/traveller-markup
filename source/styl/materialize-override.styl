@@ -52,6 +52,9 @@ nav ul .disabled a
   
   nav &
     height 100px
+    
+    @media (max-width: 570px)
+      height 70px
   
   .tab
     text-transform none
@@ -68,6 +71,9 @@ nav ul .disabled a
     nav &
       height 100px
       white-space normal
+    
+      @media (max-width: 570px)
+        height 70px
     
     a
       color #fff
@@ -565,3 +571,18 @@ select
   input[type=search],
   textarea.materialize-textarea
     margin-bottom 0
+    
+[id^="materialize-lean-overlay"]
+  z-index 994 !important
+  
+.modal
+  z-index 995 !important
+  
+#sidenav-overlay
+  z-index 990 !important
+  
+.drag-target
+  z-index 991 !important
+  
+.side-nav
+  z-index 994 !important
