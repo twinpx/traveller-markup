@@ -1,0 +1,133 @@
+@import '../../styl/component-include.styl'
+
+@keyframes impression-bg
+  0%
+    background-color #3d7cc9
+  10%
+    background-color #f759a3
+  20%
+    background-color #a874ef
+  30%
+    background-color #4b5ae4
+  40%
+    background-color #4dd2c1
+  50%
+    background-color #bd3eb6
+  60%
+    background-color #0abe0a
+  70%
+    background-color #b1d928
+  80%
+    background-color #fd7024
+  90%
+    background-color #4b5ae4
+  100%
+    background-color #3d7cc9
+    
+@keyframes impression-preloader
+  0%
+    transform rotate(0deg)
+  50%
+    transform rotate(180deg)
+  100%
+    transform rotate(360deg)
+
+.b-impression-block
+
+  &__frame
+    position relative
+    background-color #3d7cc9
+    animation impression-bg 30s linear infinite
+    height 100%
+    
+    &:before
+      content ''
+      display block
+      background url(/template/images/preloader.svg) no-repeat center
+      width 50px
+      height 50px
+      position absolute
+      top 50%
+      left 50%
+      margin -25px 0 0 -25px
+      animation impression-preloader 1s linear infinite
+      
+    
+  &__container
+    position absolute
+    top 0
+    left 0
+    width 100%
+    height 100%
+    color #fff
+    display flex
+    align-items center
+    background-repeat no-repeat
+    background-position center
+    background-size cover
+    
+    @media (max-width: 1024px)
+      text-align center
+      
+      p
+        margin-right auto
+        margin-left auto
+    
+    p
+      max-width 360px
+      
+  &__price
+    font-size 13.5pt
+    line-height 36px
+    
+  .fotorama__nav-wrap
+    position relative
+    
+  .fotorama__nav--dots
+    position absolute
+    bottom 0
+    left 0
+    width 100%
+
+  .fotorama__dot
+    display block
+    width 14px
+    height 14px
+    position relative
+    top 0
+    left 7px
+    border-radius 7px
+    border 1px solid #fff
+    
+  .fotorama__nav--dots .fotorama__nav__frame
+    width 32px
+    height 51px
+
+  .fotorama__nav__frame.fotorama__active .fotorama__dot
+    border-width 8px
+    
+  .fotorama__arr
+    background none
+    margin-top -45px
+    width 90px
+    height 90px
+    
+    &:after
+      content ''
+      display block
+      border-top 1px solid #fff
+      border-right 1px solid #fff
+      width 90px
+      height 90px
+      position absolute
+      
+    &.fotorama__arr--prev:after
+      transform (rotate( -135deg ))
+      left 46px
+      
+    &.fotorama__arr--next:after
+      transform (rotate( 45deg ))
+      right 46px
+    
+    @media (max-width: 520px)
+      display none
