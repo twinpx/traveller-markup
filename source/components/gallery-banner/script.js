@@ -19,7 +19,7 @@
           if( $img[0].complete ) {
             show();
           } else {
-            $img.load( function() {
+            $img.load( function() { 
               show();
             });
           }

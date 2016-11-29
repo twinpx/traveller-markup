@@ -5,6 +5,13 @@ body
   font-weight 300
   font-family "Helvetica Neue",Helvetica,"Open Sans",Arial,sans-serif
   
+a.i-text-color
+  &,
+  &:hover,
+  &:active
+    color #333
+    text-decoration none
+  
 h1,
 .b-h1
   font-size 32pt
@@ -13,7 +20,7 @@ h1,
   margin-bottom 1.3rem
   
   @media (max-width: 768px)
-    font-size 18pt
+    font-size 22pt
     
   
 h2
@@ -71,6 +78,9 @@ ol
 ul
   li
     list-style-type disc
+    
+    [class*=widget] &
+      list-style-type none
     
 hr
   border-top-color #e0e0e0
