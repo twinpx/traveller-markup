@@ -17,3 +17,29 @@ if ( document.getElementById( 'bx-panel' )) {
 }
 
 $('.modal-trigger').leanModal();
+
+//announcement
+$( '.b-announcement' ).each( function() {
+  var $announcement = $( this );
+  
+  $announcement.find( '.b-announcement__image' ).each( function() {
+    var $image = $( this );
+    var src = $image.parent().data( 'image' );
+    
+    var $img = $( '<img src="' + src + '" width="1" height="1" alt="" style="position: absolute; top: 0; left: 0; visibility: hidden;">' );
+    $announcement.append( $img );
+    
+    if ( $img[0].complete ) {
+      show( $image, $img, src );
+    } else {
+      $img.load( function() { 
+        show( $image, $img, src );
+      });
+    }
+  });
+    
+  function show( $image, $img, src ) {
+    $image.css({ backgroundImage: "url(" + src + ")" }).addClass( 'i-show' );
+    $img.remove();
+  }
+});
