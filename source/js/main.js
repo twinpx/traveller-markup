@@ -18,11 +18,11 @@ if ( document.getElementById( 'bx-panel' )) {
 
 $('.modal-trigger').leanModal();
 
-//announcement
-$( '.b-announcement' ).each( function() {
+//announcement, tours
+$( '.b-announcement, .b-tours' ).each( function() {
   var $announcement = $( this );
   
-  $announcement.find( '.b-announcement__image' ).each( function() {
+  $announcement.find( '.b-announcement__image, .b-tours__image' ).each( function() {
     var $image = $( this );
     var src = $image.parent().data( 'image' );
     

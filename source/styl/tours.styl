@@ -9,13 +9,27 @@
   .col-sm-8,
   .col-sm-12
     padding-top 100%
-    background-repeat no-repeat
-    background-position center center
-    background-size cover
     margin-top -1px
     
     @media (min-width: 768px)
       padding-top 33.3%
+    
+  .col-sm-4
+    &:nth-of-type(1)
+      animation impression-bg1 15s linear infinite
+    &:nth-of-type(2)
+      animation impression-bg3 15s linear infinite
+    &:nth-of-type(3)
+      animation impression-bg5 15s linear infinite
+    
+  .col-sm-8
+    &:nth-of-type(1)
+      animation impression-bg2 15s linear infinite
+    &:nth-of-type(2)
+      animation impression-bg4 15s linear infinite
+    
+  .col-sm-12
+    animation impression-bg3 15s linear infinite
       
   .b-card-text
     position absolute
@@ -33,8 +47,33 @@
     line-height 1.2
     text-align center
     text-decoration none
+    z-index 2
     
   .b-tours
+      
+    &__image
+      display block
+      position absolute
+      top 0
+      left 0
+      width 100%
+      height 100%
+      background-repeat no-repeat
+      background-position center center
+      background-size cover
+      opacity 0
+      transition( opacity 0.5s ease )
+      z-index 1
+      
+      &.i-show
+        opacity 1
+      
+      &:before
+        content ''
+        display block
+        width 100%
+        height 100%
+        background-color rgba(51,51,51,0.3)
     
     &__text
       display block
@@ -45,6 +84,7 @@
       height 100%
       color #fff
       text-align center
+      z-index 2
       
     &__section
       padding 0 15px
