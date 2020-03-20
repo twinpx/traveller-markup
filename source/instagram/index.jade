@@ -1,0 +1,25 @@
+﻿extends ../layouts/main.jade
+
+block title
+  title Instagram | Travellers
+
+block content
+
+  hr.i-unstyled
+
+  .row
+    .col-sm-8.col-sm-offset-2
+    
+      h1.b-relative
+        .b-heading-icon( style="background-image: url( '/template/images/instagram.svg' );" )
+        span Instagram
+        .btn.btn-small Подписаться
+  
+      p Публикуйте свои впечатления от поездок с хэштэгом #спасибо-тревелерс!
+      
+    
+  include ../components/instagram-feed/template
+
+  hr.i-unstyled
+
+  

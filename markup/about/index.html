@@ -7,53 +7,69 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="/template/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+    <link rel="stylesheet" href="/template/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="/template/template_styles.css">
     <link rel="stylesheet" href="/template/colors.css">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:300,400,700&amp;subset=latin,cyrillic" rel="stylesheet">
     <script src="/template/jquery.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+    <script src="/template/materialize.min.js"></script>
     <script src="/template/jscript.js"></script>
   </head>
   <body><div id="bx-panel" style="z-index: 995 !important;">BX Panel</div>
     <header class="b-header">
-      <nav>
-        <div class="container">
-          <div class="nav-wrapper"><a href="/" class="brand-logo left"><img src="/upload/travellers-logo.png" alt="Travellers"></a>
-            <ul class="unstyled b-header-top-menu center hide-on-med-and-down">
-              <li><span href="/tours/" class="i-disabled">Туры</span></li>
-              <li><a href="/aviatickets/">Авиабилеты</a></li>
-              <li><a href="/hotels/">Отели</a></li>
-              <li><a href="/about/">О нас</a></li>
-            </ul>
-            <ul class="unstyled b-header-icons right">
-              <li><a href="#phoneModal" rel="nofollow" class="b-phone-icon modal-trigger"><i></i></a></li>
-              <li><a href="" data-activates="slide-out" rel="nofollow" class="b-header-nav b-menu-icon"><i></i></a></li>
-            </ul>
-            <div id="phoneModal" class="modal"><a href="#!" rel="nofollow" class="modal-action modal-close"></a>
-              <div class="modal-content text-center">
-                <h2>Связаться с нами</h2>
-                <div class="modal-phones"><i class="b-phone-icon"></i>
-                  <div><a href="tel:+88008090100" rel="nofollow">8 800 80 90 100</a></div>
-                  <div><a href="tel:+74953500000" rel="nofollow">+7 495 350 00 00</a></div>
-                  <div><a href="tel:+74953500000" rel="nofollow">+7 495 350 00 00</a></div>
-                </div>
-                <div class="modal-post"><i class="b-post-icon"></i><a href="/request/">Написать нам</a></div>
+      <div class="b-header__container">
+        <nav>
+          <div class="container">
+            <div class="nav-wrapper"><a href="/" class="brand-logo left"><img src="/upload/travellers-logo.png" alt="Travellers"></a>
+              <ul class="unstyled b-header-icons right">
+                <li class="b-header-icons__phone"><a href="tel:88008090100">8 800 80 90 100</a></li>
+                <li><a href="#phoneModal" rel="nofollow" class="b-phone-icon modal-trigger"><i></i></a></li>
+                <li><a href="" data-activates="slide-out" rel="nofollow" class="b-header-nav b-menu-icon"><i></i></a></li>
+              </ul>
+              <div class="b-header-top-menu__wrapper">
+                <ul class="unstyled b-header-top-menu center hide-on-med-and-down">
+                  <li><a href="/countries/">Страны</a></li>
+                  <li><a href="/tours/">Туры</a></li>
+                  <li><a href="/aviatickets/">Авиабилеты</a></li>
+                  <li><a href="/hotels/">Отели</a></li>
+                  <li><span href="/about/" class="i-disabled">О нас</span></li>
+                  <li><a href="/countries/">Страны</a></li>
+                  <li><a href="/tours/">Туры</a></li>
+                  <li><a href="/aviatickets/">Авиабилеты</a></li>
+                  <li><a href="/hotels/">Отели</a></li>
+                  <li><span href="/about/" class="i-disabled">О нас</span></li>
+                </ul>
               </div>
             </div>
-            <ul id="slide-out" class="side-nav unstyled">
-              <li data-activates="slide-out" class="side-nav-back"></li>
-              <li class="side-nav-logo"><a href=""><img src="/upload/travellers-logo.png" alt="Travellers"></a></li>
-              <li><a href="/tours/">Туры</a></li>
-              <li><a href="/aviatickets/">Авиабилеты</a></li>
-              <li><a href="/hotels/">Отели</a></li>
-              <li><a href="/about/">О нас</a></li>
-            </ul>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
+    <div id="phoneModal" class="modal">
+      <div class="b-phone-modal">
+        <div style="background-image: url( '/upload/phone-modal.jpg' );" class="b-phone-modal__ill"></div>
+        <div class="b-phone-modal__text text-center">
+          <div style="background-image: url( '/upload/phone-modal.jpg' );" class="b-phone-modal__cover"></div>
+          <h2>Связаться с&nbsp;нами</h2>
+          <div class="b-phone-modal__address"><b>Наш офис</b><br>Улица Мневники, дом 3,<br>офис 224</div>
+          <div class="b-phone-modal__phones">
+            <div><b><a href="tel:+88008090100" rel="nofollow">8 800 80 90 100</a></b></div>
+            <div><a href="tel:+74953500000" rel="nofollow">+7 495 350 00 00</a></div>
+            <div><a href="tel:+74953500000" rel="nofollow">+7 495 350 00 00</a></div>
+          </div>
+          <div class="b-phone-modal__post"><a href="/request/" class="btn btn-large">Написать нам</a></div>
+          <div class="b-phone-modal__close"><a href="" rel="nofollow" class="modal-close">Закрыть</a></div>
+        </div>
+      </div>
+    </div>
+    <ul id="slide-out" class="side-nav unstyled">
+      <li class="side-nav-logo"><a href=""><img src="/upload/travellers-logo.png" alt="Travellers"></a></li>
+      <li><a href="/tours/">Туры</a></li>
+      <li><a href="/aviatickets/">Авиабилеты</a></li>
+      <li><a href="/hotels/">Отели</a></li>
+      <li><a href="/about/">О нас</a></li>
+    </ul>
     <section class="container">
       <hr class="i-unstyled">
       <div class="row">
@@ -85,11 +101,12 @@
         <div class="col-sm-8 col-sm-offset-2">
           <h2>Схема проезда</h2>
         </div>
-      </div><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=rYtreBV2jTaOQeVm7STmHfRBhKkqWFKZ&width=100%&height=400&lang=ru_RU&sourceType=constructor&scroll=false"></script>
+      </div>
+      <div style="height: 400px;"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=rYtreBV2jTaOQeVm7STmHfRBhKkqWFKZ&width=100%&height=400&lang=ru_RU&sourceType=constructor&scroll=false"></script></div>
       <hr class="i-size-L i-unstyled">
       <div class="row">
         <div class="col-sm-8 col-sm-offset-2">
-          <div class="row">
+          <div class="row i-slide-top-animation">
             <div class="col-sm-6 center"><img src="/upload/about1.png" alt="" class="img-responsive"></div>
             <div class="col-sm-6">
               <h2>Широчайший выбор стран</h2>
@@ -97,7 +114,7 @@
             </div>
           </div>
           <hr class="i-unstyled">
-          <div class="row">
+          <div class="row i-slide-top-animation">
             <div class="col-sm-6 col-sm-push-6 center"><img src="/upload/about2.png" alt="" class="img-responsive"></div>
             <div class="col-sm-6 col-sm-pull-6">
               <h2>Качественный сервис</h2>
@@ -105,7 +122,7 @@
             </div>
           </div>
           <hr class="i-unstyled">
-          <div class="row">
+          <div class="row i-slide-top-animation">
             <div class="col-sm-6 center"><img src="/upload/about3.png" alt="" class="img-responsive"></div>
             <div class="col-sm-6">
               <h2>Надежный партнер</h2>

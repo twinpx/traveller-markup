@@ -1,0 +1,1 @@
+!function(a){"use strict";a(function(){a(".b-instagram-feed__img").lazyload()})}(jQuery);

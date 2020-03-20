@@ -2,33 +2,42 @@
   clear both
   
   .row
-    margin-bottom 0
+    margin-bottom 30px !important
     overflow hidden
+    
+    @media( max-width 767px )
+      margin-bottom 14px !important
     
   .col-sm-4,
   .col-sm-8,
   .col-sm-12
-    padding-top 100%
+    padding-top calc(100% - 30px)
     margin-top -1px
     
     @media (min-width: 768px)
-      padding-top 33.3%
+      padding-top calc(33.3% - 30px)
+      
+    @media (max-width 767px)
+      margin-bottom 14px
+      
+      &:last-child
+        margin-bottom 0
     
   .col-sm-4
-    &:nth-of-type(1)
+    &:nth-of-type(1) .b-announcement__image
       animation impression-bg1 15s linear infinite
-    &:nth-of-type(2)
+    &:nth-of-type(2) .b-announcement__image
       animation impression-bg3 15s linear infinite
-    &:nth-of-type(3)
+    &:nth-of-type(3) .b-announcement__image
       animation impression-bg5 15s linear infinite
     
   .col-sm-8
-    &:nth-of-type(1)
+    &:nth-of-type(1) .b-announcement__image
       animation impression-bg2 15s linear infinite
-    &:nth-of-type(2)
+    &:nth-of-type(2) .b-announcement__image
       animation impression-bg4 15s linear infinite
     
-  .col-sm-12
+  .col-sm-12 .b-announcement__image
     animation impression-bg3 15s linear infinite
       
   .b-card-text
@@ -55,8 +64,8 @@
       display block
       position absolute
       top 0
-      left 0
-      width 100%
+      left 15px
+      width calc(100% - 30px)
       height 100%
       background-repeat no-repeat
       background-position center center

@@ -1,43 +1,59 @@
 ﻿<div id="bx-panel" style="z-index: 995 !important;">BX Panel</div>
 
 header.b-header
-  nav
-    .container
-      .nav-wrapper
-      
-        a.brand-logo.left( href="/" )
-          img( src="/upload/travellers-logo.png" alt="Travellers" )
+  .b-header__container
+    nav
           
-        ul.unstyled.b-header-top-menu.center.hide-on-med-and-down
-          li
-            span.i-disabled( href="/tours/" ) Туры
-          li
-            a( href="/aviatickets/" ) Авиабилеты
-          li
-            a( href="/hotels/" ) Отели
-          li
-            a( href="/about/" ) О нас
+      .container
+        .nav-wrapper
         
-        ul.unstyled.b-header-icons.right
-          li
-            a( href="#phoneModal" rel="nofollow" ).b-phone-icon.modal-trigger
-              i
-          li
-            a.b-header-nav.b-menu-icon( href="" data-activates="slide-out" rel="nofollow" )
-              i
-              
-        include ../../modules/modal/include
-              
-        ul#slide-out.side-nav.unstyled
-          li.side-nav-back(  data-activates="slide-out" )
-          li.side-nav-logo
-            a( href="" )
-              img( src="/upload/travellers-logo.png" alt="Travellers" )
-          li
-            a( href="/tours/" ) Туры
-          li
-            a( href="/aviatickets/" ) Авиабилеты
-          li
-            a( href="/hotels/" ) Отели
-          li
-            a( href="/about/" ) О нас
+          a.brand-logo.left( href="/" )
+            img( src="/upload/travellers-logo.png" alt="Travellers" )
+          
+          ul.unstyled.b-header-icons.right
+            li.b-header-icons__phone
+              a( href="tel:88008090100" ) 8 800 80 90 100
+            li
+              a( href="#phoneModal" rel="nofollow" ).b-phone-icon.modal-trigger
+                i
+            li
+              a.b-header-nav.b-menu-icon( href="" data-activates="slide-out" rel="nofollow" )
+                i
+            
+          .b-header-top-menu__wrapper
+            ul.unstyled.b-header-top-menu.center.hide-on-med-and-down
+              li
+                a( href="/countries/" ) Страны
+              li
+                a( href="/tours/" ) Туры
+              li
+                a( href="/aviatickets/" ) Авиабилеты
+              li
+                a( href="/hotels/" ) Отели
+              li
+                span.i-disabled( href="/about/" ) О нас
+              li
+                a( href="/countries/" ) Страны
+              li
+                a( href="/tours/" ) Туры
+              li
+                a( href="/aviatickets/" ) Авиабилеты
+              li
+                a( href="/hotels/" ) Отели
+              li
+                span.i-disabled( href="/about/" ) О нас
+                
+include ../../modules/modal/include
+                
+ul#slide-out.side-nav.unstyled
+  li.side-nav-logo
+    a( href="" )
+      img( src="/upload/travellers-logo.png" alt="Travellers" )
+  li
+    a( href="/tours/" ) Туры
+  li
+    a( href="/aviatickets/" ) Авиабилеты
+  li
+    a( href="/hotels/" ) Отели
+  li
+    a( href="/about/" ) О нас

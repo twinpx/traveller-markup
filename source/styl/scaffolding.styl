@@ -16,8 +16,11 @@
       a
         vertical-align top
         
-  ul&-top-menu
+  &-top-menu__wrapper
     margin-left 31%
+    margin-right 20%
+    height 100px
+    overflow hidden
     
   ul&-icons
     margin-right -10px
@@ -30,6 +33,20 @@
       
       @media ( max-width: 600px )
         padding 0 10px
+        
+  ul li&-icons__phone
+    display none
+    font-size 11.5pt
+    font-weight bold
+    padding-right 10px
+    
+  .b-header.i-fixed ul.b-header-icons li&-icons__phone a
+    padding 0
+    font-size inherit
+    
+    &:hover
+      opacity 1
+      background-color transparent
   
   a,
   a:hover,
@@ -43,25 +60,48 @@
       img
         width 70%
         height auto
-  
-.side-nav
-  a
-    color #fff
-    
-  &-back
-    width 69px
+        
+  &.i-fixed
     height 100px
-    background embedurl( 'img/slide-back.png' ) no-repeat center center
-    position absolute
-    top 0
-    right 0
-    z-index 10
     
-    @media ( min-width: 767px )
+    .b-header__container
+      opacity .92
+      position fixed
+      top -100px
+      width 100%
+      transition( top .5s cubic-bezier(0.250, 0.460, 0.450, 0.940))
+      z-index 990
+  
+    nav,
+    nav .nav-wrapper i
+      height 50px
+      line-height 50px
+      
+    nav .nav-wrapper i
+      transform( scale(.7))
+  
+    .brand-logo img
+      height 50px
+      width auto
+      
+    .b-header-top-menu__wrapper
       display none
       
-    &:active
-      background-color rgba(0,0,0,0.05)
+    .b-header-icons__phone
+      display list-item
+    
+      @media( max-width 450px )
+        display none
+      
+    ul.b-header-icons a
+      padding 0 10px
+  
+.side-nav
+
+  li > a,
+  a
+    color #fff
+    text-decoration none
     
   &-logo
     height 100px
@@ -74,17 +114,17 @@
   i
     display inline-block
     vertical-align top
-    width 30px
-    height 30px
-    background embedurl( 'img/phone-icon.png' ) no-repeat center center
+    width 24px
+    height 24px
+    background embedurl( 'img/phone-icon.svg' ) no-repeat center center
       
 .b-menu-icon
   i
     display inline-block
     vertical-align top
-    width 30px
-    height 30px
-    background embedurl( 'img/menu-icon.png' ) no-repeat center center
+    width 24px
+    height 24px
+    background embedurl( 'img/menu-icon.svg' ) no-repeat center center
     
 .b-footer
   background-color #fff

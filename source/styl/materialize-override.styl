@@ -572,7 +572,8 @@ select
   textarea.materialize-textarea
     margin-bottom 0
     
-[id^="materialize-lean-overlay"]
+[id^="materialize-lean-overlay"],
+.modal-overlay
   z-index 994 !important
   
 .modal
@@ -586,3 +587,31 @@ select
   
 .side-nav
   z-index 994 !important
+
+  li:not( .side-nav-logo ),
+  li:not( .side-nav-back )
+    
+    a
+      @media( max-width 570px )
+        height 34px
+        line-height 34px
+  
+.bx-core-window
+
+  [type="radio"]:not(:checked)+label, [type="radio"]:checked+label
+    position: static;
+    padding-left: 0;
+    cursor: pointer;
+    display: inline-block;
+    height: auto;
+    line-height: normal;
+    font-size: inherit;
+    transition: unset;
+    user-select: none;
+    
+    &:before,
+    &:after
+      content: none
+      
+  td
+    padding inherit

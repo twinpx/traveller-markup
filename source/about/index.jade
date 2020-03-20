@@ -38,14 +38,15 @@ block content
     .col-sm-8.col-sm-offset-2
       h2 Схема проезда
       
-  | <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=rYtreBV2jTaOQeVm7STmHfRBhKkqWFKZ&width=100%&height=400&lang=ru_RU&sourceType=constructor&scroll=false"></script>
+  div( style="height: 400px;" )
+    | <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=rYtreBV2jTaOQeVm7STmHfRBhKkqWFKZ&width=100%&height=400&lang=ru_RU&sourceType=constructor&scroll=false"></script>
 
   hr.i-size-L.i-unstyled
   
   .row
     .col-sm-8.col-sm-offset-2
     
-      .row
+      .row.i-slide-top-animation
         .col-sm-6.center
           img.img-responsive( src="/upload/about1.png" alt="" )
         .col-sm-6
@@ -54,7 +55,7 @@ block content
       
       hr.i-unstyled
       
-      .row
+      .row.i-slide-top-animation
         .col-sm-6.col-sm-push-6.center
           img.img-responsive( src="/upload/about2.png" alt="" )
         .col-sm-6.col-sm-pull-6
@@ -63,7 +64,7 @@ block content
       
       hr.i-unstyled
       
-      .row
+      .row.i-slide-top-animation
         .col-sm-6.center
           img.img-responsive( src="/upload/about3.png" alt="" )
         .col-sm-6

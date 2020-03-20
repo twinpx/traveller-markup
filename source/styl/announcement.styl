@@ -92,33 +92,49 @@
   clear both
   
   .row
-    margin-bottom 0
+    margin-bottom 30px !important
     overflow hidden
     
   .col-sm-4,
   .col-sm-8,
   .col-sm-12
-    padding-top 100%
+    padding-top calc(100% - 30px)
     margin-top -1px
     
     @media (min-width: 768px)
-      padding-top 33.3%
+      padding-top calc(33.3% - 30px)
+      
+    @media (max-width 767px)
+      margin-bottom 30px
+      
+      &:last-child
+        margin-bottom 0
     
   .col-sm-4
-    &:nth-of-type(1)
+    &:nth-of-type(1) .b-announcement__image
       animation impression-bg1 15s linear infinite
-    &:nth-of-type(2)
+    &:nth-of-type(2) .b-announcement__image
       animation impression-bg3 15s linear infinite
-    &:nth-of-type(3)
+    &:nth-of-type(3) .b-announcement__image
       animation impression-bg5 15s linear infinite
+      
+    .b-announcement__type
+    
+      @media( max-width 1420px ) and ( min-width 1024px )
+        display none
     
   .col-sm-8
-    &:nth-of-type(1)
+    &:nth-of-type(1) .b-announcement__image
       animation impression-bg2 15s linear infinite
-    &:nth-of-type(2)
+    &:nth-of-type(2) .b-announcement__image
       animation impression-bg4 15s linear infinite
+      
+    .b-announcement__type
     
-  .col-sm-12
+      @media( max-width 1250px ) and ( min-width 1024px )
+        display none
+    
+  .col-sm-12 .b-announcement__image
     animation impression-bg3 15s linear infinite
       
   .b-card-text
@@ -144,8 +160,8 @@
       display block
       position absolute
       top 0
-      left 0
-      width 100%
+      left 15px
+      width calc(100% - 30px)
       height 100%
       background-repeat no-repeat
       background-position center center
@@ -168,48 +184,78 @@
       display block
       position absolute
       bottom 0
-      left 0
-      width 100%
+      left 15px
+      width calc(100% - 30px)
       height 100%
+      padding 50px 50px 0
       color #fff
-      text-align center
+      text-align left
+      text-decoration none
       z-index 2
       
+      @media( max-width 1123px ) and ( min-width 767px )
+        padding 25px 25px 0
+        line-height 1.2
+      
     &__section
-      padding 0 15px
       font-size 10.5pt
-      font-weight bold
-      position absolute
-      top 6%
-      left 0
-      width 100%
+      margin-bottom 15px
+        
+      @media( max-width 1023px ) and ( min-width 768px )
+        margin-bottom 5px
+        font-size 9.5pt
       
     &__title
-      padding 0 15px
-      font-size 18pt
-      font-weight bold
+      font-size 21pt
       line-height 30px
-      position absolute
-      top 25%
-      left 0
-      width 100%
+      margin-bottom 15px
+        
+      @media( max-width 1240px ) and ( min-width 1024px )
+        max-height 60px
+        overflow hidden
+        font-size 16pt
+        
+      @media( max-width 1023px ) and ( min-width 768px )
+        margin-bottom 5px
+        font-size 16pt
+        line-height 1.2
       
     &__type
-      padding 0 15px
       font-size 11pt
       line-height 24px
-      position absolute
-      top 55%
-      left 0
-      width 100%
+      margin-bottom 15px
+      max-height 48px
+      overflow hidden
+        
+      @media( max-width 1023px ) and ( min-width 768px )
+        font-size 9.5pt
+        line-height 1.4
+        max-height 34px
       
     &__price
-      padding 0 15px
       font-size 16pt
-      position absolute
-      bottom 5%
-      left 0
-      width 100%
+        
+      @media( max-width 1023px ) and ( min-width 768px )
+        margin-bottom 5px
+        font-size 12pt
       
       &__num
         font-weight bold
+        
+  .btn
+    opacity 0
+    transition( opacity 0.5s ease )
+    position absolute
+    bottom 50px
+    left 65px
+    z-index 3
+    
+    @media( max-width 1123px )
+      left 40px
+      
+    @media( max-width 1024px )
+      display none
+    
+@media ( min-width 1025px )
+  .b-announcement [class|=col-sm]:hover .btn
+    opacity 1

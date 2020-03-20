@@ -7,53 +7,85 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="/template/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+    <link rel="stylesheet" href="/template/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="/template/template_styles.css">
     <link rel="stylesheet" href="/template/colors.css">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:300,400,700&amp;subset=latin,cyrillic" rel="stylesheet">
     <script src="/template/jquery.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+    <script src="/template/materialize.min.js"></script>
     <script src="/template/jscript.js"></script>
   </head>
   <body><div id="bx-panel" style="z-index: 995 !important;">BX Panel</div>
     <header class="b-header">
-      <nav>
-        <div class="container">
-          <div class="nav-wrapper"><a href="/" class="brand-logo left"><img src="/upload/travellers-logo.png" alt="Travellers"></a>
-            <ul class="unstyled b-header-top-menu center hide-on-med-and-down">
-              <li><span href="/tours/" class="i-disabled">Туры</span></li>
-              <li><a href="/aviatickets/">Авиабилеты</a></li>
-              <li><a href="/hotels/">Отели</a></li>
-              <li><a href="/about/">О нас</a></li>
-            </ul>
-            <ul class="unstyled b-header-icons right">
-              <li><a href="#phoneModal" rel="nofollow" class="b-phone-icon modal-trigger"><i></i></a></li>
-              <li><a href="" data-activates="slide-out" rel="nofollow" class="b-header-nav b-menu-icon"><i></i></a></li>
-            </ul>
-            <div id="phoneModal" class="modal"><a href="#!" rel="nofollow" class="modal-action modal-close"></a>
-              <div class="modal-content text-center">
-                <h2>Связаться с нами</h2>
-                <div class="modal-phones"><i class="b-phone-icon"></i>
-                  <div><a href="tel:+88008090100" rel="nofollow">8 800 80 90 100</a></div>
-                  <div><a href="tel:+74953500000" rel="nofollow">+7 495 350 00 00</a></div>
-                  <div><a href="tel:+74953500000" rel="nofollow">+7 495 350 00 00</a></div>
-                </div>
-                <div class="modal-post"><i class="b-post-icon"></i><a href="/request/">Написать нам</a></div>
+      <div class="b-header__container">
+        <nav>
+          <div class="container">
+            <div class="nav-wrapper"><a href="/" class="brand-logo left"><img src="/upload/travellers-logo.png" alt="Travellers"></a>
+              <ul class="unstyled b-header-icons right">
+                <li class="b-header-icons__phone"><a href="tel:88008090100">8 800 80 90 100</a></li>
+                <li><a href="#phoneModal" rel="nofollow" class="b-phone-icon modal-trigger"><i></i></a></li>
+                <li><a href="" data-activates="slide-out" rel="nofollow" class="b-header-nav b-menu-icon"><i></i></a></li>
+              </ul>
+              <div class="b-header-top-menu__wrapper">
+                <ul class="unstyled b-header-top-menu center hide-on-med-and-down">
+                  <li><a href="/countries/">Страны</a></li>
+                  <li><a href="/tours/">Туры</a></li>
+                  <li><a href="/aviatickets/">Авиабилеты</a></li>
+                  <li><a href="/hotels/">Отели</a></li>
+                  <li><span href="/about/" class="i-disabled">О нас</span></li>
+                  <li><a href="/countries/">Страны</a></li>
+                  <li><a href="/tours/">Туры</a></li>
+                  <li><a href="/aviatickets/">Авиабилеты</a></li>
+                  <li><a href="/hotels/">Отели</a></li>
+                  <li><span href="/about/" class="i-disabled">О нас</span></li>
+                </ul>
               </div>
             </div>
-            <ul id="slide-out" class="side-nav unstyled">
-              <li data-activates="slide-out" class="side-nav-back"></li>
-              <li class="side-nav-logo"><a href=""><img src="/upload/travellers-logo.png" alt="Travellers"></a></li>
-              <li><a href="/tours/">Туры</a></li>
-              <li><a href="/aviatickets/">Авиабилеты</a></li>
-              <li><a href="/hotels/">Отели</a></li>
-              <li><a href="/about/">О нас</a></li>
-            </ul>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
+    <div id="phoneModal" class="modal">
+      <div class="b-phone-modal">
+        <div style="background-image: url( '/upload/phone-modal.jpg' );" class="b-phone-modal__ill"></div>
+        <div class="b-phone-modal__text text-center">
+          <div style="background-image: url( '/upload/phone-modal.jpg' );" class="b-phone-modal__cover"></div>
+          <h2>Связаться с&nbsp;нами</h2>
+          <div class="b-phone-modal__address"><b>Наш офис</b><br>Улица Мневники, дом 3,<br>офис 224</div>
+          <div class="b-phone-modal__phones">
+            <div><b><a href="tel:+88008090100" rel="nofollow">8 800 80 90 100</a></b></div>
+            <div><a href="tel:+74953500000" rel="nofollow">+7 495 350 00 00</a></div>
+            <div><a href="tel:+74953500000" rel="nofollow">+7 495 350 00 00</a></div>
+          </div>
+          <div class="b-phone-modal__post"><a href="/request/" class="btn btn-large">Написать нам</a></div>
+          <div class="b-phone-modal__close"><a href="" rel="nofollow" class="modal-close">Закрыть</a></div>
+        </div>
+      </div>
+    </div>
+    <ul id="slide-out" class="side-nav unstyled">
+      <li class="side-nav-logo"><a href=""><img src="/upload/travellers-logo.png" alt="Travellers"></a></li>
+      <li><a href="/tours/">Туры</a></li>
+      <li><a href="/aviatickets/">Авиабилеты</a></li>
+      <li><a href="/hotels/">Отели</a></li>
+      <li><a href="/about/">О нас</a></li>
+    </ul>
+    <!-- start /components/video-banner/-->
+    <link rel="stylesheet" href="/components/video-banner/style.css">
+    <script src="/components/video-banner/script.js"></script>
+    <div class="b-video-banner">
+      <video autoplay="" autobuffer="" playsinline="" webkit-playsinline="" poster="/template/images/video.jpg" preload="metadata" muted="" loop="">
+        <source src="/template/video/video.mp4" type="video/mp4">
+        <p>To view this video please enable JavaScript, and consider upgrading to a web browser that supports HTML5 video</p>
+      </video>
+      <div class="b-impression-block__container">
+        <div class="container">
+          <h2 class="b-h1">Хевиз</h2>
+          <p>Хевиз – известный венгерский курорт, популярность которому обеспечило самое крупное целебное     термальное озеро, которое стремятся посетить гости из Европы и России.<br><b class="b-impression-block__price">от 480 €</b></p>
+        </div>
+      </div>
+    </div>
+    <!-- end /components/video-banner/-->
     <!-- start /components/gallery-banner/-->
     <link rel="stylesheet" href="/components/gallery-banner/style.css">
     <script src="/components/gallery-banner/script.js"></script>
@@ -65,7 +97,7 @@
           <div class="b-impression-block__container"><a href="" data-image="http://s.fotorama.io/1.jpg" class="b-impression-block__image"></a>
             <div class="container">
               <h2 class="b-h1">Хевиз</h2>
-              <p>Хевиз – известный венгерский курорт, популярность которому обеспечило самое крупное целебное     термальное озеро, которое стремятся посетить гости из Европы и России.<br><b class="b-impression-block__price">от 480 €</b></p>
+              <p>Хевиз – известный венгерский курорт, популярность которому обеспечило самое крупное целебное термальное озеро, которое стремятся посетить гости из Европы и России.<br><b class="b-impression-block__price">от 480 €</b><span href="" class="btn btn-large">Посмотреть</span></p>
             </div>
           </div>
         </div>
@@ -74,7 +106,7 @@
             <div data-image="http://s.fotorama.io/2.jpg" class="b-impression-block__image"></div>
             <div class="container">
               <h2 class="b-h1">Хевиз</h2>
-              <p>Хевиз – известный венгерский курорт, популярность которому обеспечило самое крупное целебное     термальное озеро.<br><b class="b-impression-block__price">от 1 480 €</b></p>
+              <p>Хевиз – известный венгерский курорт, популярность которому обеспечило самое крупное целебное термальное озеро.<br><b class="b-impression-block__price">от 1 480 €</b><span href="" class="btn btn-large">Посмотреть</span></p>
             </div>
           </div>
         </div>
@@ -83,7 +115,7 @@
             <div data-image="http://s.fotorama.io/3.jpg" class="b-impression-block__image"></div>
             <div class="container">
               <h2 class="b-h1">Венгрия</h2>
-              <p>Хевиз – известный венгерский курорт, популярность которому обеспечило самое крупное целебное     термальное озеро.<br><b class="b-impression-block__price">от 1 480 €</b></p>
+              <p>Хевиз – известный венгерский курорт, популярность которому обеспечило самое крупное целебное термальное озеро.<br><b class="b-impression-block__price">от 1 480 €</b><span href="" class="btn btn-large">Посмотреть</span></p>
             </div>
           </div>
         </div>
@@ -112,104 +144,6 @@
         </div>
       </div>
     </div>
-    <div class="b-forms">
-      <div class="hidden-xs">
-        <div class="row">
-          <div class="col-sm-12">
-            <nav>
-              <ul class="unstyled tabs">
-                <li class="tab col-sm-3"><a href="#form1" class="valign-wrapper"><span class="valign center">Поиск туров</span></a></li>
-                <li class="tab col-sm-3"><a href="#form2" class="valign-wrapper"><span class="valign center">Поиск авиабилетов</span></a></li>
-                <li class="tab col-sm-3 disabled"><a href="#form3" class="valign-wrapper"><span class="valign center">Поиск отелей</span></a></li>
-                <li class="tab col-sm-3"><a href="#form-menu" class="valign-wrapper modal-trigger"><span class="valign b-forms-menu"></span></a></li>
-              </ul>
-            </nav>
-          </div>
-          <div id="form1" class="col-sm-12 b-forms__tab">
-            <div style="width: 100px; background-color: lightgreen;">form1</div>
-          </div>
-          <div id="form2" class="col-sm-12 b-forms__tab">
-            <div style="width: 100px; background-color: lightgreen;">form2</div>
-          </div>
-          <div id="form3" class="col-sm-12 b-forms__tab">
-            <div style="width: 500px; background-color: violet;">form3</div>
-          </div>
-          <div id="form4" class="col-sm-12 b-forms__tab">
-            <div style="width: 700px; background-color: pink;"><script charset="utf-8" src="//www.travelpayouts.com/widgets/2e904aed9b11dc04a26ae5f66e4a9820.js?v=767" async></script></div>
-          </div>
-          <div id="form9" class="col-sm-12 b-forms__tab">
-            <div style="width: 200px; background-color: pink;">form9</div>
-          </div>
-          <div id="form10" class="col-sm-12 b-forms__tab">
-            <div style="width: 600px; background-color: orange;">form10</div>
-          </div>
-        </div>
-      </div>
-      <div class="visible-xs-block">
-        <div class="row">
-          <div class="col-sm-12">
-            <nav>
-              <ul class="unstyled tabs">
-                <li class="tab col-sm-3"><a href="#form5" title="Поиск туров" class="i-tours"></a></li>
-                <li class="tab col-sm-3"><a href="#form6" title="Поиск авиабилетов" class="i-avia"></a></li>
-                <li class="tab col-sm-3 disabled"><a href="#form7" title="Поиск отелей" class="i-hotels"></a></li>
-                <li class="tab col-sm-3"><a href="#form-menu" class="valign-wrapper modal-trigger"><span class="valign b-forms-menu"></span></a></li>
-                <!--li.tab.col-sm-3
-                a( href="#form8" titile="Бронирование автомобилей" ).i-cars
-                
-                -->
-              </ul>
-            </nav>
-          </div>
-          <div id="form5" class="col-sm-12 b-forms__tab">
-            <div style="width: 300px; background-color: pink;"><script charset="utf-8" src="//www.travelpayouts.com/widgets/2e904aed9b11dc04a26ae5f66e4a9820.js?v=767" async></script></div>
-          </div>
-          <div id="form6" class="col-sm-12 b-forms__tab">
-            <div style="width: 100px; background-color: lightgreen;"><script charset="utf-8" src="//www.travelpayouts.com/widgets/2e904aed9b11dc04a26ae5f66e4a9820.js?v=767" async></script></div>
-          </div>
-          <div id="form7" class="col-sm-12 b-forms__tab">
-            <div style="width: 500px; background-color: violet;"><script charset="utf-8" src="//www.travelpayouts.com/widgets/2e904aed9b11dc04a26ae5f66e4a9820.js?v=767" async></script></div>
-          </div>
-          <div id="form8" class="col-sm-12 b-forms__tab">
-            <div style="width: 200px; background-color: lightblue;"><script charset="utf-8" src="//www.travelpayouts.com/widgets/2e904aed9b11dc04a26ae5f66e4a9820.js?v=767" async></script></div>
-          </div>
-          <div id="form11" class="col-sm-12 b-forms__tab">
-            <div style="width: 100px; background-color: lightgreen;"><script charset="utf-8" src="//www.travelpayouts.com/widgets/2e904aed9b11dc04a26ae5f66e4a9820.js?v=767" async></script></div>
-          </div>
-          <div id="form12" class="col-sm-12 b-forms__tab">
-            <div style="width: 500px; background-color: violet;"><script charset="utf-8" src="//www.travelpayouts.com/widgets/2e904aed9b11dc04a26ae5f66e4a9820.js?v=767" async></script></div>
-          </div>
-        </div>
-      </div>
-      <div id="form-menu" class="modal bottom-sheet">
-        <div class="modal-content">  
-          <nav>
-            <ul class="tabs">
-              <div class="hidden-xs">
-                <li class="tab"><a href="#form4" class="valign-wrapper modal-action modal-close"><span class="valign center">Бронирование автомобилей</span></a></li>
-                <li class="tab"><a href="#form9" class="valign-wrapper modal-action modal-close"><span class="valign center">Поиск круизов</span></a></li>
-                <li class="tab"><a href="#form10" class="valign-wrapper modal-action modal-close"><span class="valign center">Поиск горящих путевок</span></a></li>
-                <li class="tab"><a href="#form10" class="valign-wrapper modal-action modal-close"><span class="valign center">Бронирование автомобилей</span></a></li>
-                <li class="tab"><a href="#form9" class="valign-wrapper modal-action modal-close"><span class="valign center">Бронирование автомобилей</span></a></li>
-                <li class="tab"><a href="#form10" class="valign-wrapper modal-action modal-close"><span class="valign center">Поиск круизов</span></a></li>
-                <li class="tab"><a href="#form10" class="valign-wrapper modal-action modal-close"><span class="valign center">Поиск горящих путевок</span></a></li>
-                <li class="tab"><a href="#form9" class="valign-wrapper modal-action modal-close"><span class="valign center">Бронирование автомобилей</span></a></li>
-              </div>
-              <div class="visible-xs-block">
-                <li class="tab"><a href="#form8" class="valign-wrapper modal-action modal-close"><span class="valign center">Бронирование автомобилей</span></a></li>
-                <li class="tab"><a href="#form11" class="valign-wrapper modal-action modal-close"><span class="valign center">Поиск круизов</span></a></li>
-                <li class="tab"><a href="#form12" class="valign-wrapper modal-action modal-close"><span class="valign center">Поиск горящих путевок</span></a></li>
-                <li class="tab"><a href="#form8" class="valign-wrapper modal-action modal-close"><span class="valign center">Бронирование автомобилей</span></a></li>
-                <li class="tab"><a href="#form11" class="valign-wrapper modal-action modal-close"><span class="valign center">Бронирование автомобилей</span></a></li>
-                <li class="tab"><a href="#form12" class="valign-wrapper modal-action modal-close"><span class="valign center">Поиск круизов</span></a></li>
-                <li class="tab"><a href="#form8" class="valign-wrapper modal-action modal-close"><span class="valign center">Поиск горящих путевок</span></a></li>
-                <li class="tab"><a href="#form11" class="valign-wrapper modal-action modal-close"><span class="valign center">Бронирование автомобилей</span></a></li>
-              </div>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </div>
     <section class="container">
       <hr class="i-unstyled i-size-L">
       <div class="b-line-menu">
@@ -219,33 +153,33 @@
       </div>
       <hr class="i-unstyled i-size-L">
       <!-- start /components/announcement.21/-->
-      <div class="b-announcement-21 b-announcement">
+      <div class="b-announcement-21 b-announcement i-slide-top-animation">
         <div class="row">
           <div class="col-sm-8">
             <div data-original="/upload/banner6.jpg" class="b-announcement__image"></div><a href="/tours/tour/" class="b-announcement__text">
-              <div class="b-announcement__section">Старушка Европа</div>
-              <div class="b-announcement__title">Увидеть Париж</div>
-              <div class="b-announcement__type">Прогулки по летнему Парижу</div>
+              <div class="b-announcement__section">Греция</div>
+              <div class="b-announcement__title">Корфу. Athina. 3* </div>
+              <div class="b-announcement__type">Отдых на Адриатическом море 2 недели с авиаперелетом, отелем, трансферо...</div>
               <div class="b-announcement__price">
                 от
-                 <span class="b-announcement__price__num">76 900 руб.</span>
-              </div></a>
+                 <span class="b-announcement__price__num">48 900 руб.</span>
+              </div></a><a href="" class="btn btn-large">Подробнее</a>
           </div>
           <div class="col-sm-4">
             <div data-original="/upload/banner5.jpg" class="b-announcement__image"></div><a href="/tours/tour/" class="b-announcement__text">
-              <div class="b-announcement__section">Сказка</div>
-              <div class="b-announcement__title">Северное сияние в Исландии</div>
-              <div class="b-announcement__type">Туры с авиаперелетом</div>
+              <div class="b-announcement__section">Италия</div>
+              <div class="b-announcement__title">Бордигера. Grand hotel del mare 5* </div>
+              <div class="b-announcement__type">Недельный тур с проживанием с проживанием в 5* отеле на первой линии Ад...</div>
               <div class="b-announcement__price">
                 от
-                 <span class="b-announcement__price__num">466 800 руб.</span>
-              </div></a>
+                 <span class="b-announcement__price__num">49 700 руб.</span>
+              </div></a><a href="" class="btn btn-large">Подробнее</a>
           </div>
         </div>
       </div>
       <!-- end /components/announcement.21/-->
       <!-- start /components/announcement.111/-->
-      <div class="b-announcement-111 b-announcement">
+      <div class="b-announcement-111 b-announcement i-slide-top-animation">
         <div class="row">
           <div class="col-sm-4">
             <div data-original="/upload/banner2.jpg" class="b-announcement__image"></div><a href="/tours/tour/" class="b-announcement__text">
@@ -255,7 +189,7 @@
               <div class="b-announcement__price">
                 от
                  <span class="b-announcement__price__num">266 800 руб.</span>
-              </div></a>
+              </div></a><a href="" class="btn btn-large">Посмотреть</a>
           </div>
           <div class="col-sm-4">
             <div data-original="/upload/banner3.jpg" class="b-announcement__image"></div><a href="/tours/tour/" class="b-announcement__text">
@@ -265,7 +199,7 @@
               <div class="b-announcement__price">
                 от
                  <span class="b-announcement__price__num">106 800 руб.</span>
-              </div></a>
+              </div></a><a href="" class="btn btn-large">Посмотреть</a>
           </div>
           <div class="col-sm-4">
             <div data-original="/upload/banner4.jpg" class="b-announcement__image"></div><a href="/tours/tour/" class="b-announcement__text">
@@ -275,33 +209,33 @@
               <div class="b-announcement__price">
                 от
                  <span class="b-announcement__price__num">466 800 руб.</span>
-              </div></a>
+              </div></a><a href="" class="btn btn-large">Посмотреть</a>
           </div>
         </div>
       </div>
       <!-- end /components/announcement.111/-->
       <!-- start /components/announcement.12/-->
-      <div class="b-announcement-12 b-announcement">
+      <div class="b-announcement-12 b-announcement i-slide-top-animation">
         <div class="row">
           <div class="col-sm-4">
             <div data-original="/upload/banner3.jpg" class="b-announcement__image"></div><a href="/tours/tour/" class="b-announcement__text">
-              <div class="b-announcement__section">Старушка Европа</div>
-              <div class="b-announcement__title">Увидеть Париж</div>
-              <div class="b-announcement__type">Прогулки по летнему Парижу</div>
+              <div class="b-announcement__section">Турция</div>
+              <div class="b-announcement__title">Ичмелер. Hotel Aqua 5* </div>
+              <div class="b-announcement__type"></div>
               <div class="b-announcement__price">
                 от
-                 <span class="b-announcement__price__num">76 900 руб.</span>
-              </div></a>
+                 <span class="b-announcement__price__num">129 700 руб.</span>
+              </div></a><a href="" class="btn btn-large">Подробнее</a>
           </div>
           <div class="col-sm-8">
             <div data-original="/upload/banner2.jpg" class="b-announcement__image"></div><a href="/tours/tour/" class="b-announcement__text">
-              <div class="b-announcement__section">Сказка</div>
-              <div class="b-announcement__title">Северное сияние в Исландии</div>
-              <div class="b-announcement__type">Туры с авиаперелетом</div>
+              <div class="b-announcement__section">Индонезия</div>
+              <div class="b-announcement__title">Бали. Fontana Hotel 4* </div>
+              <div class="b-announcement__type">Двухнедельный тур на остров Бали с прямым авиаперелетом.</div>
               <div class="b-announcement__price">
                 от
-                 <span class="b-announcement__price__num">466 800 руб.</span>
-              </div></a>
+                 <span class="b-announcement__price__num">346 000 руб.</span>
+              </div></a><a href="" class="btn btn-large">Подробнее</a>
           </div>
         </div>
       </div>
@@ -412,7 +346,7 @@
           <p>Мы рады приветствовать вас на сайте туристической компании Travellers, мы бережно относимся к вашему времени и комфорту, поэтому наш сайт максимально прост и удобен в использование. </p>
           <p>Вы готовы выбрать собственный отдых, тогда обратите внимание на преимущества,к оторыми вы сможете воспользваться, обратившись к нам.</p>
           <hr class="i-size-XL">
-          <div class="row">
+          <div class="row i-slide-top-animation">
             <div class="col-sm-6 center"><img src="/upload/about1.png" alt="" class="img-responsive"></div>
             <div class="col-sm-6">
               <h2>Широчайший выбор стран</h2>
@@ -420,7 +354,7 @@
             </div>
           </div>
           <hr class="i-unstyled">
-          <div class="row">
+          <div class="row i-slide-top-animation">
             <div class="col-sm-6 col-sm-push-6 center"><img src="/upload/about2.png" alt="" class="img-responsive"></div>
             <div class="col-sm-6 col-sm-pull-6">
               <h2>Качественный сервис</h2>
@@ -428,7 +362,7 @@
             </div>
           </div>
           <hr class="i-unstyled">
-          <div class="row">
+          <div class="row i-slide-top-animation">
             <div class="col-sm-6 center"><img src="/upload/about3.png" alt="" class="img-responsive"></div>
             <div class="col-sm-6">
               <h2>Надежный партнер</h2>
@@ -439,6 +373,73 @@
         </div>
       </div>
       <hr class="i-size-M i-unstyled">
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+          <h2 class="b-relative">
+            <div style="background-image: url( '/template/images/instagram.svg' );" class="b-heading-icon"></div><span>Instagram</span>
+            <div class="btn btn-xsmall">Подписаться</div>
+          </h2>
+          <p>Публикуйте свои впечатления от поездок с хэштэгом #спасибо-тревелерс!</p>
+        </div>
+      </div>
+      <!-- start /components/instagram-feed/-->
+      <link rel="stylesheet" href="/components/instagram-feed/style.css">
+      <script src="/components/instagram-feed/script.js"></script>
+      <div class="b-instagram-feed">
+        <div class="row i-slide-top-animation">
+          <div class="col-sm-3">
+            <div class="b-instagram-feed__item">
+              <div data-original="/upload/instagram/1.jpg" class="b-instagram-feed__img"></div>
+              <div class="b-instagram-feed__text">Почему нельзя всегда жить в отеле? Вы только представьте: просыпаешься в красивом номере, спускаешься вниз, где тебя ждёт уже готовый завтрак. Никаких дел по дому, ушёл по своим делам, вернулся - в номере уже идеальная чистота. И так каждый день. </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="b-instagram-feed__item">
+              <div data-original="/upload/instagram/2.jpg" class="b-instagram-feed__img"></div>
+              <div class="b-instagram-feed__text">Buon pomeriggio dalla spiaggia di Sansone all'#isoladelba con la foto di @barbara.barilla</div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="b-instagram-feed__item">
+              <div data-original="/upload/instagram/3.jpg" class="b-instagram-feed__img"></div>
+              <div class="b-instagram-feed__text">Почему нельзя всегда жить в отеле? </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="b-instagram-feed__item">
+              <div data-original="/upload/instagram/4.jpg" class="b-instagram-feed__img"></div>
+              <div class="b-instagram-feed__text">Почему нельзя всегда жить в отеле? Вы только представьте: просыпаешься в красивом номере, спускаешься вниз, где тебя ждёт уже готовый завтрак. Никаких дел по дому, ушёл по своим делам, вернулся - в номере уже идеальная чистота. И так каждый день.</div>
+            </div>
+          </div>
+        </div>
+        <div class="row i-slide-top-animation">
+          <div class="col-sm-3">
+            <div class="b-instagram-feed__item">
+              <div data-original="/upload/instagram/1.jpg" class="b-instagram-feed__img"></div>
+              <div class="b-instagram-feed__text">Почему нельзя всегда жить в отеле? Вы только представьте: просыпаешься в красивом номере, спускаешься вниз, где тебя ждёт уже готовый завтрак. Никаких дел по дому, ушёл по своим делам, вернулся - в номере уже идеальная чистота. И так каждый день. </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="b-instagram-feed__item">
+              <div data-original="/upload/instagram/2.jpg" class="b-instagram-feed__img"></div>
+              <div class="b-instagram-feed__text">Buon pomeriggio dalla spiaggia di Sansone all'#isoladelba con la foto di @barbara.barilla</div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="b-instagram-feed__item">
+              <div data-original="/upload/instagram/3.jpg" class="b-instagram-feed__img"></div>
+              <div class="b-instagram-feed__text">Почему нельзя всегда жить в отеле? </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="b-instagram-feed__item">
+              <div data-original="/upload/instagram/4.jpg" class="b-instagram-feed__img"></div>
+              <div class="b-instagram-feed__text">Почему нельзя всегда жить в отеле? Вы только представьте: просыпаешься в красивом номере, спускаешься вниз, где тебя ждёт уже готовый завтрак. Никаких дел по дому, ушёл по своим делам, вернулся - в номере уже идеальная чистота. И так каждый день. </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end /components/instagram-feed/-->
     </section>
     <footer class="b-footer">
       <section class="container">

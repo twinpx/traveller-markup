@@ -4,11 +4,14 @@ block title
   title Main page | travellers
   
 block banner
+
+  include ./components/video-banner/template
+        
   include ./components/gallery-banner/template
   
   include ./modules/forms/banner
   
-  include ./modules/forms/template
+  //-include ./modules/forms/template
 
 block content
 
@@ -36,7 +39,7 @@ block content
       
       hr.i-size-XL
       
-      .row
+      .row.i-slide-top-animation
         .col-sm-6.center
           img.img-responsive( src="/upload/about1.png" alt="" )
         .col-sm-6
@@ -45,7 +48,7 @@ block content
       
       hr.i-unstyled
       
-      .row
+      .row.i-slide-top-animation
         .col-sm-6.col-sm-push-6.center
           img.img-responsive( src="/upload/about2.png" alt="" )
         .col-sm-6.col-sm-pull-6
@@ -54,7 +57,7 @@ block content
       
       hr.i-unstyled
       
-      .row
+      .row.i-slide-top-animation
         .col-sm-6.center
           img.img-responsive( src="/upload/about3.png" alt="" )
         .col-sm-6
@@ -63,3 +66,15 @@ block content
           p Мы гарантирцем, что заказаные у нас услуги будут предоставлены своевременно и качественно.
 
   hr.i-size-M.i-unstyled
+  
+  .row
+    .col-sm-8.col-sm-offset-2
+    
+      h2.b-relative
+        .b-heading-icon( style="background-image: url( '/template/images/instagram.svg' );" )
+        span Instagram
+        .btn.btn-xsmall Подписаться
+  
+      p Публикуйте свои впечатления от поездок с хэштэгом #спасибо-тревелерс!
+  
+  include ./components/instagram-feed/template

@@ -3,7 +3,7 @@ body
   font-size 12pt
   line-height 1.9
   font-weight 300
-  font-family "Helvetica Neue",Helvetica,"Open Sans",Arial,sans-serif
+  font-family Montserrat,"Helvetica Neue",Helvetica,"Open Sans",Arial,sans-serif
   
 a.i-text-color
   &,
@@ -22,6 +22,8 @@ h1,
   @media (max-width: 768px)
     font-size 22pt
     
+  .btn-small
+    margin -6px 0 0 14px
   
 h2
   font-size 20pt
@@ -123,6 +125,22 @@ a:focus
 .btn-wide
   width 100%
   
+.btn-small
+  font-size 9pt
+  font-weight normal
+  height 33px
+  line-height 33px
+  padding-right 15px
+  padding-left 15px
+  
+.btn-xsmall
+  font-size 7pt
+  font-weight normal
+  height 21px
+  line-height 21px
+  padding-right 10px
+  padding-left 10px
+  
 .text-large
   font-size 20pt
   
@@ -137,3 +155,28 @@ a:focus
   
   @media ( max-width 768px )
     left -10px
+    
+.b-heading-icon
+  position absolute
+  
+  h1 &,
+  .b-h1 &
+    top 8px
+    left -52px
+    width 33px
+    height 33px
+  
+  h2 &,
+  .b-h2 &
+    top 8px
+    left -32px
+    width 21px
+    height 21px
+    
+h2,
+.b-h2
+  .btn-xsmall
+    margin-left 8px
+  
+.b-relative
+  position relative

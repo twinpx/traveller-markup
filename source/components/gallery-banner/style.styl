@@ -86,6 +86,9 @@
     p
       max-width 360px
       
+      b
+        display block
+        margin-bottom 30px
       
     p, .b-h1
       @media (min-width: 1025px) and (max-width: 1525px)
@@ -96,6 +99,13 @@
       transition( opacity 0.5s ease )
       pointer-events none
       z-index 2
+      
+    .btn
+      opacity 0
+      transition( opacity 0.5s ease )
+      
+    &:hover .btn
+      opacity 1
       
   &__image
     display block
